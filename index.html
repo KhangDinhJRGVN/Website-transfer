@@ -7,92 +7,27 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Profile</title>
   </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    html,
-    body {
-      font-family: "Raleway", sans-serif;
-      height: 100vh;
-      overflow: auto;
-      line-height: 1.5;
-    }
-    .radius {
-      vertical-align: middle;
-      width: 100px;
-      height: 100px;
-      border-radius: 5%;
-    }
-    .filter {
-      background-color: white;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      gap: 10px;
-    }
-    .grid-container {
-      margin-top: 10px;
-      display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: 350px 350px;
-      gap: 20px;
-    }
-    .grid-item {
-      background-color: white;
-      height: 200px;
-    }
-    .grid-wrap {
-      padding: 20px;
-      background-color: white;
-      gap: 10px;
-      display: grid;
-    }
-    .filter1 {
-      height: 35px;
-      display: flex;
-      align-items: center;
-      padding: 3px 10px;
-      cursor: pointer;
-    }
-    .filter1:hover {
-      background-color: black;
-      color: white;
-    }
-    .hover-left {
-      padding: 10px;
-      margin: -10px;
-      cursor: pointer;
-    }
-    .hover-left:hover {
-      background-color: gainsboro !important;
-      color: black !important;
-      span,
-      i {
-        color: black !important;
-      }
-    }
-    .hover-right:hover {
-      background-color: gainsboro !important;
-      color: black !important;
-      span,
-      i {
-        color: black !important;
-      }
-    }
-    .hover-image:hover {
-      filter: contrast(50%);
-    }
-  </style>
   <body>
     <div style="display: flex">
-      <div style="width: 20%; margin: 20px">
-        <div style="display: flex; flex-direction: column; gap: 20px">
+      <div style="width: 20%; margin: 20px; position: relative">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: sticky;
+            top: 20px;
+          "
+        >
           <img
             src="https://www.w3schools.com/w3images/avatar_g2.jpg"
             alt="No image this here"
@@ -100,27 +35,53 @@
           />
           <h3 style="font-weight: 600">PORTFOLIO</h3>
           <span>Template by W3.CSS</span>
-          <div
+
+          <a
             class="hover-left"
-            style="display: flex; align-items: baseline; gap: 15px"
+            href="#portfolio"
+            style="
+              text-decoration: none;
+              color: black;
+              display: flex;
+              align-items: baseline;
+              gap: 15px;
+            "
           >
-            <i class="fa-solid fa-briefcase" style="color: green"></i>
-            <span style="font-size: 15px; color: green">PORTFOLIO</span>
-          </div>
-          <div
-            class="hover-left"
-            style="display: flex; align-items: baseline; gap: 15px"
+            <i
+              class="fa-solid fa-briefcase"
+              style="color: rgb(0, 128, 111)"
+            ></i>
+            <span style="font-size: 15px; color: rgb(0, 128, 111)"
+              >PORTFOLIO
+            </span></a
           >
-            <i class="fa-solid fa-user"></i>
-            <span>ABOUT</span>
-          </div>
-          <div
+          <a
             class="hover-left"
-            style="display: flex; align-items: baseline; gap: 15px"
+            href="#about-me"
+            style="
+              display: flex;
+              align-items: baseline;
+              gap: 15px;
+              text-decoration: none;
+              color: black;
+            "
+            ><i class="fa-solid fa-user"></i> <span>ABOUT</span></a
+          >
+
+          <a
+            href="#contact-me"
+            class="hover-left"
+            style="
+              display: flex;
+              align-items: baseline;
+              gap: 15px;
+              text-decoration: none;
+              color: black;
+            "
           >
             <i class="fa-solid fa-phone"></i>
             <span>CONTACT</span>
-          </div>
+          </a>
           <div style="display: flex; align-items: center; gap: 20px">
             <i class="fa-brands fa-facebook hover-left"></i>
             <i class="fa-brands fa-youtube hover-left"></i>
@@ -132,12 +93,11 @@
         style="
           width: 80%;
           background-color: #e8e8e8;
-          padding: 10px;
-          height: 100vh;
-          overflow: auto;
+          padding-left: 10px;
+          padding-right: 10px;
         "
       >
-        <h1 style="font-weight: 500">My Portfolio</h1>
+        <h1 style="font-weight: 500" id="portfolio">My Portfolio</h1>
         <div
           style="
             margin-top: 40px;
@@ -296,7 +256,7 @@
             display: flex;
             gap: 10px;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 50px;
             cursor: pointer;
           "
         >
@@ -322,6 +282,347 @@
             height="385px"
             width="50%"
           />
+        </div>
+        <div
+          style="
+            margin-top: 40px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+          "
+          id="about-me"
+        >
+          <h3>About me</h3>
+          <p>
+            Just me, myself and I, exploring the universe of unknownment. I have
+            a heart of love and an interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+          </p>
+        </div>
+        <h2 style="margin-top: 40px">Technical Skills</h2>
+        <div
+          style="
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+          "
+        >
+          <p>Photography</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%">
+              <div class="progress-text">90%</div>
+            </div>
+          </div>
+          <p>Web Design</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%">
+              <div class="progress-text">50%</div>
+            </div>
+          </div>
+          <p>Photoshop</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%">
+              <div class="progress-text">70%</div>
+            </div>
+          </div>
+
+          <div
+            class="progress-download-parent"
+            style="width: 30%; height: 50px; cursor: pointer; margin-top: 15px"
+          >
+            <i
+              class="fa-solid fa-download"
+              style="
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                width: 25px;
+                height: 100%;
+                margin-left: 30px;
+                color: white;
+              "
+            ></i>
+            <div class="progress-download" style="font-size: 15px">
+              Download Resume
+            </div>
+          </div>
+        </div>
+        <p style="font-size: 20px; margin-top: 20px">How much I charge</p>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            color: #b8b3b3;
+          "
+        >
+          <div
+            class="grid-item hover-service"
+            style="
+              width: 30%;
+              text-align: center;
+              height: 500px;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid #ddd;
+            "
+          >
+            <p class="class-style-title">Basic</p>
+            <p class="class-style-body">Web Design</p>
+            <p class="class-style-body">Photography</p>
+            <p class="class-style-body">1GB Storage</p>
+            <p class="class-style-body">Mail Support</p>
+            <span
+              class="class-style-body class-style-last-body"
+              style="display: flex; flex-direction: column"
+            >
+              <h2>$ 10</h2>
+              <p>per month</p>
+            </span>
+            <div
+              class="class-style-body class-style-last-body"
+              style="background-color: #f1f1f1"
+            >
+              <p class="class-style-color-btn-signup">Sign Up</p>
+            </div>
+          </div>
+          <div
+            class="grid-item hover-service"
+            style="
+              width: 30%;
+              text-align: center;
+              height: 500px;
+              border: 1px solid #ddd;
+            "
+          >
+            <p
+              class="class-style-title"
+              style="background-color: #00806f; opacity: 0.5"
+            >
+              Pro
+            </p>
+            <p class="class-style-body">Web Design</p>
+            <p class="class-style-body">Photography</p>
+            <p class="class-style-body">50GB Storage</p>
+            <p class="class-style-body">Endless Support</p>
+            <span
+              class="class-style-body class-style-last-body"
+              style="display: flex; flex-direction: column"
+            >
+              <h2>$ 25</h2>
+              <p>per month</p>
+            </span>
+            <div
+              class="class-style-body class-style-last-body"
+              style="background-color: #f1f1f1"
+            >
+              <p class="class-style-color-btn-signup">Sign Up</p>
+            </div>
+          </div>
+          <div
+            class="grid-item hover-service"
+            style="
+              width: 30%;
+              text-align: center;
+              height: 500px;
+              border: 1px solid #ddd;
+            "
+          >
+            <p class="class-style-title">Premium</p>
+            <p class="class-style-body">Web Design</p>
+            <p class="class-style-body">Photography</p>
+            <p class="class-style-body">Unlimited Storage</p>
+            <p class="class-style-body">Endless Support</p>
+            <span
+              class="class-style-body class-style-last-body"
+              style="display: flex; flex-direction: column"
+            >
+              <h2>$ 25</h2>
+              <p>per month</p>
+            </span>
+            <div
+              class="class-style-body class-style-last-body"
+              style="background-color: #f1f1f1"
+            >
+              <p class="class-style-color-btn-signup">Sign Up</p>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            background-color: #a09f9f;
+            margin: 80px -10px 0;
+            padding: 15px;
+            gap: 10px;
+          "
+          id="contact-me"
+        >
+          <span
+            style="
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 30px;
+              display: flex;
+            "
+            >Contact me</span
+          >
+
+          <div class="grid-container" style="gap: 0px; height: 150px">
+            <div class="grid-item class-style-chicago">
+              <i class="fa-regular fa-envelope"></i>
+              <p>email@email.com</p>
+            </div>
+            <div
+              class="grid-item class-style-chicago"
+              style="background-color: #00806f"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Chicago, US</p>
+            </div>
+            <div class="grid-item class-style-chicago">
+              <i class="fa-solid fa-phone"></i>
+              <p>512312311</p>
+            </div>
+          </div>
+          <hr style="width: 100%; height: 0.5px; background-color: white" />
+          <form>
+            <div
+              style="display: flex; flex-direction: column; margin-top: 10px"
+            >
+              <span>Name</span>
+              <input
+                type="text"
+                style="height: 35px; margin-bottom: 15px"
+                required
+              />
+              <span>Email</span>
+              <input
+                type="text"
+                style="height: 35px; margin-bottom: 15px"
+                required
+              />
+              <span>Message</span>
+              <input
+                type="text"
+                style="height: 35px; margin-bottom: 15px"
+                required
+              />
+            </div>
+            <button
+              class="hover-send-messenge"
+              type="submit"
+              style="
+                background-color: black;
+                display: flex;
+                flex-direction: row;
+                width: 15%;
+                align-items: center;
+                gap: 10px;
+                height: 35px;
+                padding: 10px;
+                margin-bottom: 25px;
+                color: white;
+                cursor: pointer;
+              "
+            >
+              <i class="fa-regular fa-paper-plane"></i>
+              <p style="font-size: 15px">Send Message</p>
+            </button>
+          </form>
+        </div>
+        <div style="background-color: #504f4f; margin: -10px; padding: 30px">
+          <div style="gap: 50px; height: 200px; display: flex">
+            <div class="class-style-footer">
+              <p style="font-size: 20px">FOOTER</p>
+              <p>
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                condimentum, porta lectus vitae, ultricies congue gravida diam
+                non fringilla.
+              </p>
+              <p>Powered by <a href="" style="color: white">w3.css</a></p>
+            </div>
+            <div class="class-style-footer">
+              <p style="font-size: 20px">BLOG POSTS</p>
+              <div
+                class="hover-footer-blog"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  height="50px"
+                  width="50px"
+                />
+                <p>
+                  Lorem <br />
+                  Sed mattis nunc
+                </p>
+              </div>
+              <hr style="width: 100%; height: 1px; background-color: white" />
+              <div
+                class="hover-footer-blog"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  gap: 10px;
+                  padding: 10px;
+                "
+              >
+                <img
+                  src="https://source.unsplash.com/random"
+                  alt=""
+                  height="50px"
+                  width="50px"
+                />
+                <p>
+                  Ipsum <br />
+                  Praes tinci sed
+                </p>
+              </div>
+            </div>
+            <div class="class-style-footer">
+              <p style="font-size: 20px">POPULAR TAGS</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px">
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+                <p class="class-fill-footer">Travel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            background-color: black;
+            margin: -10px;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+          "
+        >
+          <p>Powered by <a href="" style="color: white">w3.css</a></p>
         </div>
       </div>
     </div>

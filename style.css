@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+.radius {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+}
+.filter {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.grid-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 350px 350px;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  height: 200px;
+}
+.grid-wrap {
+  padding: 20px;
+  background-color: white;
+  gap: 10px;
+  display: grid;
+}
+.filter1 {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.filter1:hover {
+  background-color: black;
+  color: white;
+}
+.hover-left {
+  padding: 10px;
+  margin: -10px;
+  cursor: pointer;
+}
+.hover-left:hover {
+  background-color: gainsboro !important;
+  color: black !important;
+  span,
+  i {
+    color: black !important;
+  }
+}
+.hover-right:hover {
+  background-color: gainsboro !important;
+  color: black !important;
+  span,
+  i {
+    color: black !important;
+  }
+}
+.hover-image:hover {
+  filter: contrast(50%);
+}
+.hover-footer-blog:hover {
+  background-color: #ddd;
+}
+.hover-service:hover {
+  color: black;
+}
+.progress-bar {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.progress-bar-download {
+  position: relative;
+  margin-bottom: 10px;
+  width: 25%;
+  height: 40px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background-color: #616161;
+  position: relative;
+}
+
+.progress-download-parent {
+  height: 100%;
+  background-color: #616161;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.progress-download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.progress-download-parent:hover {
+  background-color: #a8a1a1;
+}
+.hover-send-messenge:hover {
+  background-color: #ddd !important;
+  border: #ddd;
+  color: black !important;
+}
+.progress-download-parent:hover i {
+  color: black !important;
+}
+.progress-download-parent:hover .progress-download {
+  color: black;
+}
+.class-style-title {
+  background-color: #616161;
+  color: white;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 25px;
+}
+.grid-item:hover .class-style-title {
+  background-color: black;
+  opacity: 1 !important;
+}
+.grid-item:hover .class-style-color-btn-signup {
+  opacity: 1 !important;
+}
+.class-style-color-btn-signup:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.class-style-body {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+.class-style-last-body {
+  height: 20%;
+}
+.class-style-color-btn-signup {
+  background-color: #00806f;
+  width: 30%;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 0.5;
+}
+.class-style-chicago {
+  background-color: #5c5a5a;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  gap: 10px;
+  height: 100px;
+}
+.class-style-chicago i {
+  font-size: 40px;
+}
+.class-style-footer {
+  background-color: #504f4f;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 10px;
+  height: 100px;
+  width: 33.33%;
+}
+.class-fill-footer {
+  background-color: #ccc;
+  padding: 3px;
+  font-size: 12px;
+  color: black;
+}
